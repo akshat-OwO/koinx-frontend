@@ -5,6 +5,7 @@ import CurrencyStats from "@/components/currency-stats";
 import CurrencyTokenomics from "@/components/currency-tokenomics";
 import LayoutWrapper from "@/components/layouts/layout-wrapper";
 import PromoBanner from "@/components/promo-banner";
+import Team from "@/components/team";
 import TrendingCoins from "@/components/trending-coins";
 import { Button } from "@/components/ui/button";
 import { ChevronsRight } from "lucide-react";
@@ -31,6 +32,7 @@ export default function Home() {
 					<CurrencySentiment />
 					<CurrencyAbout />
 					<CurrencyTokenomics />
+					<Team />
 				</div>
 				<div className="space-y-5">
 					<PromoBanner />
