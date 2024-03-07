@@ -8,6 +8,7 @@ import PromoBanner from "@/components/promo-banner";
 import Team from "@/components/team";
 import TrendingCoins from "@/components/trending-coins";
 import { Button } from "@/components/ui/button";
+import YouMayAlsoLike from "@/components/you-may-also-like";
 import { ChevronsRight } from "lucide-react";
 
 export default function Home() {
@@ -25,8 +26,8 @@ export default function Home() {
 					Bitcoin
 				</Button>
 			</div>
-			<div className="flex flex-col xl:flex-row gap-5">
-				<div className="flex-1 flex flex-col gap-5">
+			<div className="flex flex-col xl:grid xl:grid-cols-12 gap-5">
+				<div className="xl:col-span-8 xl:row-start-1 flex flex-col gap-5">
 					<CurrencyStats />
 					<CurrencyInfo />
 					<CurrencySentiment />
@@ -34,7 +35,10 @@ export default function Home() {
 					<CurrencyTokenomics />
 					<Team />
 				</div>
-				<div className="space-y-5">
+				<div className="xl:col-span-full">
+					<YouMayAlsoLike />
+				</div>
+				<div className="xl:col-span-4 xl:col-start-9 xl:row-start-1 space-y-5">
 					<PromoBanner />
 					<TrendingCoins />
 				</div>
