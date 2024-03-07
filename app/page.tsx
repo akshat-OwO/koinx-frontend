@@ -1,4 +1,5 @@
 import CurrencyInfo from "@/components/currency-info";
+import CurrencySentiment from "@/components/currency-sentiment";
 import CurrencyStats from "@/components/currency-stats";
 import LayoutWrapper from "@/components/layouts/layout-wrapper";
 import PromoBanner from "@/components/promo-banner";
@@ -25,6 +26,7 @@ export default function Home() {
 				<div className="flex-1 flex flex-col gap-5">
 					<CurrencyStats />
 					<CurrencyInfo />
+					<CurrencySentiment />
 				</div>
 				<div className="space-y-5">
 					<PromoBanner />
