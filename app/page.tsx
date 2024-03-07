@@ -1,5 +1,7 @@
 import CurrencyStats from "@/components/currency-stats";
 import LayoutWrapper from "@/components/layouts/layout-wrapper";
+import PromoBanner from "@/components/promo-banner";
+import TrendingCoins from "@/components/trending-coins";
 import { Button } from "@/components/ui/button";
 import { ChevronsRight } from "lucide-react";
 
@@ -18,8 +20,14 @@ export default function Home() {
 					Bitcoin
 				</Button>
 			</div>
-			<div className="grid lg:grid-cols-6 gap-5">
-				<CurrencyStats />
+			<div className="flex flex-col lg:flex-row gap-5">
+				<div className="flex-1">
+					<CurrencyStats />
+				</div>
+				<div className="space-y-5">
+					<PromoBanner />
+					<TrendingCoins />
+				</div>
 			</div>
 		</LayoutWrapper>
 	);

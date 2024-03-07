@@ -2,15 +2,6 @@
 
 import axios from "axios";
 
-type Price = {
-	bitcoin: {
-		inr: number;
-		inr_24h_change: number;
-		usd: number;
-		usd_24h_change: number;
-	};
-};
-
 export async function price(
 	id: string,
 	vs_currencies: string,

@@ -17,7 +17,7 @@ const CurrencyStats = () => {
 	});
 
 	return (
-		<div className="col-span-4 p-6 bg-white rounded-md flex flex-col">
+		<div className="p-6 bg-white rounded-md flex flex-col">
 			<div className="flex flex-col gap-10">
 				<div className="flex items-center gap-5">
 					<div className="flex items-center gap-2">
