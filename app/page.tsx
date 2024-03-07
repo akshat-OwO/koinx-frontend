@@ -1,3 +1,4 @@
+import CurrencyInfo from "@/components/currency-info";
 import CurrencyStats from "@/components/currency-stats";
 import LayoutWrapper from "@/components/layouts/layout-wrapper";
 import PromoBanner from "@/components/promo-banner";
@@ -20,9 +21,10 @@ export default function Home() {
 					Bitcoin
 				</Button>
 			</div>
-			<div className="flex flex-col lg:flex-row gap-5">
-				<div className="flex-1">
+			<div className="flex flex-col xl:flex-row gap-5">
+				<div className="flex-1 flex flex-col gap-5">
 					<CurrencyStats />
+					<CurrencyInfo />
 				</div>
 				<div className="space-y-5">
 					<PromoBanner />
