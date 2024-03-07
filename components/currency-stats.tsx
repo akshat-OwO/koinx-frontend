@@ -31,7 +31,7 @@ const CurrencyStats = () => {
 				</div>
 				<div className="flex items-start gap-5">
 					<div className="flex flex-col gap-2">
-						<p className="text-4xl font-semibold">
+						<p className="text-2xl sm:text-4xl font-semibold">
 							{isLoading || !data ? (
 								<Loader className="size-10 animate-spin" />
 							) : (
@@ -51,7 +51,7 @@ const CurrencyStats = () => {
 						)}
 					</div>
 					{data && (
-						<div className="flex items-center gap-4">
+						<div className="flex items-center gap-2.5 sm:gap-4">
 							<Badge
 								className={cn("p-2 rounded gap-2", {
 									"bg-red-500/50 hover:bg-red-500/50 text-red-600":
@@ -83,7 +83,7 @@ const CurrencyStats = () => {
 			<Separator className="my-5" />
 			<div className="flex flex-col gap-1 lg:gap-0 lg:flex-row lg:items-center justify-between pb-2">
 				<span className="text-sm font-semibold">Bitcoin Price Chart (USD)</span>
-				<div className="flex items-center gap-1 lg:gap-2">
+				<div className="flex flex-wrap items-center gap-0.5 lg:gap-2">
 					<Badge className="cursor-pointer bg-transparent hover:bg-transparent text-primary">
 						1H
 					</Badge>
