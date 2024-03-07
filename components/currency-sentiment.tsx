@@ -7,7 +7,6 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "./ui/carousel";
-import { Progress } from "./ui/progress";
 
 const CurrencySentiment = () => {
 	return (

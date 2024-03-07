@@ -1,6 +1,8 @@
+import CurrencyAbout from "@/components/currency-about";
 import CurrencyInfo from "@/components/currency-info";
 import CurrencySentiment from "@/components/currency-sentiment";
 import CurrencyStats from "@/components/currency-stats";
+import CurrencyTokenomics from "@/components/currency-tokenomics";
 import LayoutWrapper from "@/components/layouts/layout-wrapper";
 import PromoBanner from "@/components/promo-banner";
 import TrendingCoins from "@/components/trending-coins";
@@ -27,6 +29,8 @@ export default function Home() {
 					<CurrencyStats />
 					<CurrencyInfo />
 					<CurrencySentiment />
+					<CurrencyAbout />
+					<CurrencyTokenomics />
 				</div>
 				<div className="space-y-5">
 					<PromoBanner />
