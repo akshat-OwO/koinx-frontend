@@ -10,6 +10,7 @@ import TrendingCoins from "@/components/trending-coins";
 import { Button } from "@/components/ui/button";
 import YouMayAlsoLike from "@/components/you-may-also-like";
 import { ChevronsRight } from "lucide-react";
+import { Suspense } from "react";
 
 export default function Home() {
 	return (
@@ -29,7 +30,9 @@ export default function Home() {
 			<div className="flex flex-col xl:grid xl:grid-cols-12 gap-5">
 				<div className="xl:col-span-8 xl:row-start-1 flex flex-col gap-5">
 					<CurrencyStats />
-					<CurrencyInfo />
+					<Suspense>
+						<CurrencyInfo />
+					</Suspense>
 					<CurrencySentiment />
 					<CurrencyAbout />
 					<CurrencyTokenomics />
