@@ -3,7 +3,7 @@
 import React, { memo, useEffect, useRef } from "react";
 
 function PriceChart() {
-	const container = useRef();
+	const container = useRef<HTMLDivElement | null>(null);
 
 	useEffect(() => {
 		const script = document.createElement("script");
@@ -28,7 +28,9 @@ function PriceChart() {
 			"hide_volume": true,
 			"support_host": "https://www.tradingview.com"
 		  }`;
-		container.current.appendChild(script);
+		if (container.current) {
+			container.current.appendChild(script);
+		}
 	}, []);
 
 	return (
@@ -40,7 +42,7 @@ function PriceChart() {
 			<div
 				className="tradingview-widget-container__widget"
 				style={{ height: "calc(100% - 32px)", width: "100%" }}
-			></div>
+			/>
 		</div>
 	);
 }
